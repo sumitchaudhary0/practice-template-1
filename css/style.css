@@ -1,0 +1,202 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+/***************COMMON-CSS**********************/
+.container
+{
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+/********************NAVBAR STYLING****************/
+.navbar-wrapper
+{
+    background: #e58e3d;
+    line-height: 70px;
+    color: white;
+    
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+}
+/*_------------logo css -------------------*/
+.logo-h1{
+    font-size: 31px;
+}
+/*-----------menu css--------------------*/
+.menu-items
+{
+    display: flex;
+  
+}
+.menu-items li
+{
+    display: flex;
+list-style: none;
+}
+.menu-items li a{
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px 28px;
+    color: white;
+}
+/***********************BANNER-CSS-HERE***************/
+.banner-wrapper
+{
+    background-image: url("../images/slider-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  
+}
+.banner-content-wrapper
+{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 215px 0;
+    color: white;
+}
+.banner-content-wrapper .banner-heading
+
+{
+font-size: 36px;
+}
+.banner-text
+{
+    font-size: 18px;
+    padding: 30px 0;
+}
+.banner-text p
+{
+    padding: 5px 0;
+}
+.banner-btn
+{
+  background:  #e58e3d;
+  padding: 9px 18px;
+  color: white;
+  text-decoration: none;    
+}
+/*****************ABOUT CSS HERE****************/
+
+.about-wrapper
+{
+    padding: 40px 0;
+}
+.about-wrapper .about-heading
+{
+    font-size: 23px;
+    text-align: center;
+    padding: 20px 0;
+    
+    
+}
+.about-heading::after{
+    content: '';
+    display: block;
+    width: 53px;
+    background: #e58e3d;
+    padding: 1px 0px;
+    text-align: center;
+    margin:10px auto;
+}
+.about-image
+{
+    flex-basis: 43%;
+
+}
+.about-image img{
+
+    width: 100%;
+}
+.about-content-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content
+{
+    padding: 10px 0; 
+    flex-basis: 52%;
+
+}
+.about-content .about-h4
+{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.about-content p{
+    line-height: 25px;
+}
+.about-btn
+{
+  color:#e58e3d;
+  text-decoration: none;
+line-height: 40px;
+}
+/*******************SERVICES SECTION CSS HERE***********************/
+.services-wrapper
+{
+    background: #efefef;
+  
+    
+}
+.service-item
+{
+    text-align: center; 
+     color: #db883b;
+}
+.service-head
+{
+font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.service-content-wrapper
+{
+display: flex;
+justify-content: space-around;
+padding: 30px 0;
+}
+.amount
+{
+font-size: 23px;
+font-weight: 900;
+line-height: 30px;
+}
+/*********************CONTACT-WRAPPER-HERE***************/
+.contact-wrapper{
+    background: #db883b;
+}
+.contact-content-wrapper
+{
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+.address
+{
+    line-height: 20px;
+}
+
+
+/************MEDIA QUERIES HERE FOR RESPONSIVNESS**************/
+@media (min-width: 320px) and (max-width: 480px) {
+  /*-----------NAVBAR-----------------*/
+    .navbar ,.menu-items
+{
+    flex-direction: column;
+}
+/*-------------------banner---------*/
+.banner-wrapper
+{
+   
+}
+    
+  }
